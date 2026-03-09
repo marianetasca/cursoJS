@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(213, 231, 255);
+  --primary-color-darker: rgb(227, 240, 252);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/abstract.jpg");
+  background-size: cover;
+  font-family: "Open sans", sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.305);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-top: 4px solid rgba(255, 255, 255, 0.4);
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    3px,
+    3px,
+    3px rgba(0, 0, 0, 0.089);
+}
+li {
+  font-size: 15px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+}
+
+form label {
+  padding-left: 0;
+  font-size: 15px;
+}
+form input {
+  font-size: 18px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(104, 166, 208);
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(44, 125, 187, 0.278);
+  backdrop-filter: blur(10px);
+  border-radius: 2ch;
+  border-top: 4px solid rgba(255, 255, 255, 0.636);
+  border-left: 4px solid rgba(255, 255, 255, 0.563);
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.textColor {
+  color: #183c5c;
+  
+}
+.error-text {
+  margin: 4px auto;
+  font-size: 12px;
+  color: red;
+  width: 90%;
+}

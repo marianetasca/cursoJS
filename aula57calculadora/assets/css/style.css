@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(213, 231, 255);
+  --primary-color-darker: rgb(227, 240, 252);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    var(--primary-color),
+    var(--primary-color-darker)
+  );
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 280px;
+  margin: 50px auto;
+  background: #edf3fc;
+  padding: 20px;
+  border-radius: 30px;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+h1 {
+  margin-left: 13%;
+}
+
+.titulo {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  background: linear-gradient(#96cbff, #6489ae);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.calculadora {
+  width: 250px;
+  justify-self: center;
+}
+.display {
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  margin-bottom: 5px;
+  border: 4px solid rgb(203, 224, 255);
+  border-radius: 8px;
+  background: linear-gradient(
+    337deg,
+    rgb(126, 163, 255) 0%,
+    rgba(232, 247, 255, 1) 100%
+  );
+}
+td {
+  width: 20%; /* cada célula ocupa 1/4 da linha */
+  padding: 0; /* evita que o botão fique menor */
+}
+
+.btn {
+  margin: 2px;
+  width: 90%;
+  height: 40px;
+  font-size: 1em;
+  border-radius: 16px;
+  border: 1px solid #d5d5d5;
+  background: #f4f8ff;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px #e0dfdf;
+}
+.btn:hover {
+  background: rgb(222, 232, 255);
+}
+
+.btn-parenteses {
+  background: linear-gradient(
+    337deg,
+    hsl(246, 97%, 77%) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+.btn-parenteses:hover {
+  background: linear-gradient(
+    337deg,
+    hsl(246, 52%, 49%) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.btn-operador {
+  background: linear-gradient(
+    337deg,
+    rgba(110, 151, 255, 1) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+.btn-operador:hover {
+  background: linear-gradient(
+    337deg,
+    rgb(77, 108, 184) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.btn-eq {
+  background: linear-gradient(
+    337deg,
+    rgb(97, 136, 200) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+.btn-eq:hover {
+  background: linear-gradient(
+    337deg,
+    rgb(72, 95, 133) 0%,
+    rgb(192, 213, 247) 100%
+  );
+}
+
+.btn-clear {
+  background: linear-gradient(
+    337deg,
+    hsl(0, 100%, 65%) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+.btn-clear:hover {
+  background: linear-gradient(
+    337deg,
+    hsl(0, 54%, 50%) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}

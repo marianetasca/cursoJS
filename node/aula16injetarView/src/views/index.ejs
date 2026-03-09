@@ -1,0 +1,33 @@
+<%- include('includes/head'); %>
+
+<section class="container">
+    <h1>
+        <%= titulo %> <br> <!--vai exibir a tag-->
+            <%- titulo %> <!--vai executar a tag-->
+
+
+                <!-- <% if(typeof titulo !== 'undefined') { %>
+    <%= titulo %>
+    <% } else {%>
+        o titulo nao foi enviado
+    <% } %> -->
+
+
+                <!-- <% numeros.forEach(num=> {%>
+            <%= num%> <br>
+                <% }) %> -->
+
+                <!-- <% for(let i = 0; i < numeros.length; i++) { %>
+            <%= numeros[i] %><br>
+                <% }; %> -->
+    </h1>
+
+
+    <form action="/" method="post">
+        <label for="cliente">cliente</label>
+        <input type="text" name="cliente">
+        <button>submit</button>
+    </form>
+</section>
+
+<%- include('includes/footer'); %>
