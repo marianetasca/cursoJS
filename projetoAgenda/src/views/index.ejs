@@ -2,37 +2,48 @@
     <%- include('includes/nav')%>
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2"></div>
+            <div class="text-center py-4">
+                <h1>Agenda</h1>
+                <p class="lead">Seus contatos estão abaixo</p>
+            </div>
 
-                <div class="col-lg-8 my-3">
-                    <h1 class="text-center">Agenda</h1>
-                    <p class="text-center lead">Seus contatos estão abaixo</p>
+            <%- include('includes/messages') %>
+                <div class="row">
+                    <% contatos.forEach(contato=> { %>
 
-                    <%- include('includes/messages') %>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card shadow-sm mb-4 border-0 rounded">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-1">
+                                        <%= contato.nome %>
+                                            <%= contato.sobrenome %>
+                                    </h5>
 
-                        <div class="responsive-table">
-                            <table class="table my-3">
-                                <% contatos.forEach(contato => {  %>
-                                    <tr>
-                                        <td><%= contato.nome %></td>
-                                        <td><%= contato.sobrenome %></td>
-                                        <td><%= contato.email %></td>
-                                        <td><%= contato.telefone %></td>
-                                        <td><a href="/contato/index/<%= contato._id%>">Editar</a></td>
-                                        <td><a class="text-danger" href="/contato/delete/<%= contato._id%>">Excluir</a></td>
-                                        
-                                    </tr>
-                                    <% }); %>
+                                    <p class="text-muted mb-1">
+                                        📧 <%= contato.email %>
+                                    </p>
 
+                                    <p class="text-muted">
+                                        📱 <%= contato.telefone %>
+                                    </p>
 
-                            </table>
+                                    <div class="d-flex justify-content-end gap-2 mt-3">
+                                        <a class="btn btn-outline-primary btn-sm"
+                                            href="/contato/index/<%= contato._id %>">
+                                            <i class="bi bi-pencil"></i> Editar
+                                        </a>
+
+                                        <a class="btn btn-outline-danger btn-sm"
+                                            href="/contato/delete/<%= contato._id %>">
+                                            <i class="bi bi-trash"></i> Excluir
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
+                        <% }); %>
                 </div>
 
-                <div class="col-lg-2"></div>
-            </div>
         </div>
 
         <%- include('includes/footer')%>

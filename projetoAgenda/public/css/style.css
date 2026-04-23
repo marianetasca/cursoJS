@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(rgba(232, 243, 255, 0.407), #004c831c);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.error-text {
+    color: red;
+    font-size: 15px;
+}
+
+.card {
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.borderForm {
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.navbar{
+  background: rgb(98, 130, 185);
+}
+
+.form-contato {
+    background: linear-gradient(rgba(254, 254, 255, 0.407), #90d1ff1c);
+}
+.btn-ed {
+    background-color: rgb(82, 114, 170);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.btn-ed:hover {
+    background-color: #00406d;
+    color: white;
+}
+.tamanho {
+  min-width: 400px;
+}
